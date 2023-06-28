@@ -270,7 +270,7 @@ header {
 }
 .speakers--img img {
   width: 150px;
-  height: auto;
+  height: 170px;
   object-fit: cover;
 }
 .speaker--description h4 {
@@ -287,6 +287,29 @@ header {
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
+}
+.see--more-btn {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0.75rem 0rem 0.8125rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.see--more-btn:hover {
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transform: scale(0.9);
+}
+.see--more-btn p {
+  color: #000;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .header--nav--container {
@@ -385,7 +408,14 @@ header {
     width: 300px;
   }
   .featured--speakers--container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
+    gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .see--more-btn {
+    display: none;
   }
 }
