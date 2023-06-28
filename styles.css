@@ -185,7 +185,8 @@ header {
   background-size: cover;
   padding: 40px 20px;
 }
-.main--program--header--container {
+.main--program--header--container,
+.featured--speaker--header--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,12 +194,19 @@ header {
   gap: 0.6rem;
 }
 .main--program--header {
-  color: #fff;
+   color: #fff;
   font-size: 1.25rem;
   line-height: 1.75rem;
   position: relative;
 }
-.main--program--header--line {
+.featured--speaker--header {
+  color: #000;
+  font-size: 1.25rem;
+  font-family: Lato;
+  line-height: 1.75rem;
+}
+.main--program--header--line, 
+.featured--speaker--header--line {
   width: 1.875rem;
   height: 0.125rem;
   height: 3px;
@@ -245,6 +253,40 @@ header {
   margin: 30px  auto 0 auto;
   text-align: center;
   color: #fff;
+}
+.featured--speaker {
+  padding: 20px;
+}
+.featured--speakers--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 30px;
+}
+.featured--speakers-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.speakers--img img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+.speaker--description h4 {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.speaker--description h5 {
+  color: #F78C89;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+.speaker--description p {
+  color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .header--nav--container {
@@ -341,5 +383,9 @@ header {
   }
   .main--program--link {
     width: 300px;
+  }
+  .featured--speakers--container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
