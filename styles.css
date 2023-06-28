@@ -179,6 +179,73 @@ header {
   padding: 0.7rem 0;
 }
 
+.main--program {
+  background-image: url(images/Prog-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px 20px;
+}
+.main--program--header--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.main--program--header {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  position: relative;
+}
+.main--program--header--line {
+  width: 1.875rem;
+  height: 0.125rem;
+  height: 3px;
+  background: #a04038;
+  border-radius: 10px;
+}
+.main--program--cards--container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.main--program--card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgba(59, 62, 69, 1);
+  padding: 10px;
+}
+.cards--icon--text p {
+  color: #ff5438;
+  font-size: 0.89194rem;
+  font-weight: 700;
+  line-height: 1.56094rem;
+}
+.main--program--card-description {
+  color: #fff;
+  font-size: 0.66894rem;
+  font-weight: 700;
+  line-height: 1.39369rem;
+}
+.cards--icon--text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.55744rem;
+}
+.main--program--link {
+  background: #FF4F38;
+  width: 80%;
+  padding: 20px;
+  display: block;
+  margin: 30px  auto 0 auto;
+  text-align: center;
+  color: #fff;
+}
 @media (min-width: 768px) {
   .header--nav--container {
     position: unset;
@@ -242,5 +309,37 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0;
+  }
+  .main--program--cards--container {
+    flex-direction: row;
+    gap: 0.2rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main--program--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s linear;
+    cursor: pointer;
+  }
+  .main--program--card:hover {
+    border: 2px solid #fff;
+    transform: scale(0.9);
+  }
+  .main--program--card-description {
+    text-align: center;
+  }
+  .cards--icon--text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.55744rem;
+  }
+  .main--program--link {
+    width: 300px;
   }
 }
