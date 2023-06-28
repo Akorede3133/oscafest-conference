@@ -323,6 +323,27 @@ header {
   justify-content: center;
   margin-top: 20px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+.footer--logo {
+  display: flex;
+  gap: 0.5rem;
+}
+.footer--design {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #000;
+}
 @media (min-width: 768px) {
   .header--nav--container {
     position: unset;
@@ -441,5 +462,8 @@ header {
   .partners--logos--container img {
     width: 150px;
     object-fit: cover;
+  }
+  footer {
+    padding: 20px 100px;
   }
 }
