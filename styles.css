@@ -186,7 +186,8 @@ header {
   padding: 40px 20px;
 }
 .main--program--header--container,
-.featured--speaker--header--container {
+.featured--speaker--header--container,
+.partners--header--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,7 +195,7 @@ header {
   gap: 0.6rem;
 }
 .main--program--header {
-   color: #fff;
+  color: #fff;
   font-size: 1.25rem;
   line-height: 1.75rem;
   position: relative;
@@ -202,11 +203,10 @@ header {
 .featured--speaker--header {
   color: #000;
   font-size: 1.25rem;
-  font-family: Lato;
-  line-height: 1.75rem;
 }
-.main--program--header--line, 
-.featured--speaker--header--line {
+.main--program--header--line,
+.featured--speaker--header--line,
+.partners--header--line {
   width: 1.875rem;
   height: 0.125rem;
   height: 3px;
@@ -310,6 +310,18 @@ header {
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+.partners--section {
+  padding: 25px 10px 40px 10px;
+  background-color: rgba(65, 66, 70, 1);
+}
+.partners--logos--container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 @media (min-width: 768px) {
   .header--nav--container {
@@ -417,5 +429,17 @@ header {
   }
   .see--more-btn {
     display: none;
+  }
+  .partners--logos--container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .partners--logos--container img {
+    width: 150px;
+    object-fit: cover;
   }
 }
