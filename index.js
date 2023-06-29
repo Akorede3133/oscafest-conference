@@ -1,6 +1,12 @@
 const speakersContainer = document.querySelector('.featured--speakers--container');
 const seeMoreBtn = document.querySelector('.see--more-btn');
 const seeMoreBtnPara = document.querySelector('.see--more-btn p');
+const hamburgerBtn = document.querySelector('.header--hamburger');
+const navContainer = document.querySelector('.header--nav--container');
+const headerLogo = document.querySelector('.header--logo');
+const headerSocial = document.querySelector('.header--social');
+const headerHeroSection = document.querySelector('.header--hero--section');
+const closeIcon = document.querySelector('.nav--close--icon');
 let seeMore = false;
 let speakerToBeDisplayed = [];
 const checkForWindowsWidth = () => window.innerWidth < 768;
@@ -75,3 +81,17 @@ window.addEventListener('DOMContentLoaded', () => {
   speakerToBeDisplayed = checkForWindowsWidth() ? speakersDetails.slice(0, 2) : speakersDetails;
   createSpeakerElements();
 });
+hamburgerBtn.addEventListener('click', () => {
+  navContainer.classList.add('show--header--nav--container');
+  headerLogo.classList.add('blur--header--logo');
+  headerSocial.classList.add('blur--header--social');
+  hamburgerBtn.classList.add('blur--header--hamburger');
+  headerHeroSection.classList.add('blur--header--hero--section');
+});
+closeIcon.addEventListener('click', () => {
+  navContainer.classList.remove('show--header--nav--container');
+  headerLogo.classList.remove('blur--header--logo');
+  headerSocial.classList.remove('blur--header--social');
+  hamburgerBtn.classList.remove('blur--header--hamburger');
+  headerHeroSection.classList.remove('blur--header--hero--section')
+})

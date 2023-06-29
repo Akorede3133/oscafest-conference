@@ -48,20 +48,25 @@ header {
   display: flex;
   justify-content: flex-end;
   padding: 4px;
-
-  /* filter: blur(10px); */
 }
-
+.blur--header--social {
+  filter: blur(10px);
+}
 .header--social ul {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 .header--hamburger {
-  /* filter: blur(5px); */
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
-
+.header--hamburger:hover {
+  transform: scale(1.2);
+}
+.blur--header--hamburger {
+  filter: blur(5px);
+}
 .header--social ul .bi,
 .header--social ul a {
   color: #fff;
@@ -70,8 +75,9 @@ header {
 .header--logo {
   display: flex;
   gap: 0.4rem;
-
-  /* filter: blur(10px); */
+}
+.blur--header--logo {
+  filter: blur(5px);
 }
 
 .logo--text {
@@ -89,16 +95,20 @@ header {
 }
 
 .header--nav--container {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 0;
+  overflow: hidden;
   width: 100%;
+  z-index: 1;
   background-color: var(--primary-black);
   background-color: var(--primary-light-dark);
+  transition: all 0.5s linear;
 }
-
+.show--header--nav--container {
+  height: 100vh;
+}
 .header--nav ul {
   padding: 50px 0;
   display: flex;
@@ -119,7 +129,8 @@ header {
   position: absolute;
   top: 5%;
   left: 90%;
-  z-index: 100;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .header--nav ul li {
@@ -139,8 +150,10 @@ header {
 }
 
 .header--hero--section {
-  border: 1px solid red;
   padding: 6rem 20px 4.44rem 20px;
+}
+.blur--header--hero--section {
+  filter: blur(10px);
 }
 
 .hero--greeting {
@@ -395,7 +408,18 @@ footer {
   .header--hero--section h1 {
     font-size: 4rem;
   }
-
+  .blur--header--logo {
+    filter: unset;
+  }
+  .blur--header--hamburger {
+    filter: unset;
+  }
+  .blur--header--social {
+    filter: unset;
+  }
+  .blur--header--hero--section {
+    filter: unset;
+  }
   .hero--description {
     font-size: 1.59313rem;
     border: 8.497px solid #fff;
