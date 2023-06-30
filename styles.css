@@ -62,7 +62,7 @@ header {
 .header--hamburger:hover {
   transform: scale(1.2);
 }
-.header--social ul .bi,
+ .bi,
 .header--social ul a {
   color: #fff;
 }

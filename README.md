@@ -22,7 +22,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Oscafest Conference Website] <a name="about-project">Oscafest Conference Website</a>
+# 📖 <a name="about-project">Oscafest Conference Website</a>
 
 Welcome to the Summit Website! This repository contains all the necessary files and information to set up and deploy a website for a summit event. The website is designed to provide attendees with essential details about the summit, including schedules, speakers, venue information, registration, and more.
 ## 🛠 Built With <a name="built-with"></a>
@@ -32,13 +32,15 @@ Welcome to the Summit Website! This repository contains all the necessary files 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://css3.com/">CSS</a></li>
+    <li><a href="https://javascript.com/">Javascript</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **The Summit Website offers the following features:**
+  ## The Summit Website offers the following features:
 
 * Homepage: The landing page provides an overview of the summit, highlighting key details and attracting attendees' attention.
 * About: This section offers comprehensive information about the summit, including its purpose, goals, and history.
@@ -50,7 +52,7 @@ Welcome to the Summit Website! This repository contains all the necessary files 
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://akorede3133.github.io/oscafest-conference/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
