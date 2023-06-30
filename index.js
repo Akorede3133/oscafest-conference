@@ -7,6 +7,8 @@ const headerLogo = document.querySelector('.header--logo');
 const headerSocial = document.querySelector('.header--social');
 const headerHeroSection = document.querySelector('.header--hero--section');
 const closeIcon = document.querySelector('.nav--close--icon');
+const main = document.querySelector('main');
+const footer = document.querySelector('footer');
 let seeMore = false;
 let speakerToBeDisplayed = [];
 const checkForWindowsWidth = () => window.innerWidth < 768;
@@ -83,15 +85,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 hamburgerBtn.addEventListener('click', () => {
   navContainer.classList.add('show--header--nav--container');
-  headerLogo.classList.add('blur--header--logo');
-  headerSocial.classList.add('blur--header--social');
-  hamburgerBtn.classList.add('blur--header--hamburger');
-  headerHeroSection.classList.add('blur--header--hero--section');
+  headerLogo.classList.add('blur');
+  headerSocial.classList.add('blur');
+  hamburgerBtn.classList.add('blur');
+  main.classList.add('blur');
+  footer.classList.add('blur');
+  headerHeroSection.classList.add('blur');
 });
 closeIcon.addEventListener('click', () => {
   navContainer.classList.remove('show--header--nav--container');
-  headerLogo.classList.remove('blur--header--logo');
-  headerSocial.classList.remove('blur--header--social');
-  hamburgerBtn.classList.remove('blur--header--hamburger');
-  headerHeroSection.classList.remove('blur--header--hero--section')
+  headerLogo.classList.remove('blur');
+  main.classList.remove('blur');
+  footer.classList.remove('blur');
+  headerSocial.classList.remove('blur');
+  hamburgerBtn.classList.remove('blur');
+  headerHeroSection.classList.remove('blur')
 })
