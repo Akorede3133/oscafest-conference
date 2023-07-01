@@ -605,10 +605,6 @@ footer {
     padding: 0;
   }
 
-  .header--nav ul li {
-    padding: 0;
-  }
-
   .header--nav ul li:hover {
     background-color: unset;
   }
@@ -616,6 +612,7 @@ footer {
   .header--nav ul a {
     color: var(--primary-black);
     font-size: 15px;
+    padding: 0;
   }
 
   .header--nav ul li:hover a {
