@@ -35,13 +35,7 @@ header {
 }
 
 .header--nav--section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
   padding: 10px;
-  width: 100%;
 }
 
 .header--social {
@@ -54,16 +48,12 @@ header {
 .header--social ul {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 .header--hamburger {
   cursor: pointer;
   transition: all 0.2s linear;
-}
-
-.header--hamburger:hover {
-  transform: scale(1.2);
 }
 
 .bi,
@@ -72,14 +62,7 @@ header {
 }
 
 .header--logo {
-  display: flex;
-  gap: 0.4rem;
-}
-
-.main--about--logo {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  display: none;
 }
 
 .logo--text {
@@ -131,9 +114,10 @@ header {
 .header--nav ul a {
   color: #fff;
   font-size: 15px;
-  display: inline-block;
+  display: block;
   width: 100%;
   height: 100%;
+  padding: 20px;
 }
 
 .nav--close--icon {
@@ -143,10 +127,6 @@ header {
   left: 90%;
   z-index: 1;
   cursor: pointer;
-}
-
-.header--nav ul li {
-  padding: 20px;
 }
 
 .header--nav ul a:hover {
@@ -165,13 +145,19 @@ header {
   padding: 6rem 20px 4.44rem 20px;
 }
 
+.header--hero--section .hero-bcg-text {
+  height: 10.375rem;
+  background-image: url(images/home_theme_mobile.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
 .about--header--section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 10px;
+  margin-top: 20px;
+  background-image: url(images/mobile_about_theme.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 6.0625rem;
 }
 
 .hero--greeting {
@@ -197,9 +183,9 @@ header {
 
 .hero--description {
   color: #515151;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-family: Lato, sans-serif;
-  margin-top: 3rem;
+  margin-top: 2rem;
   line-height: 1.7;
   padding: 0.2rem 1rem;
   border: 8.497px solid #fff;
@@ -242,7 +228,7 @@ header {
   padding: 20px;
 }
 
-.main--about--header--text {
+.main--about--info p {
   color: #838383;
   text-align: center;
   font-size: 1rem;
@@ -250,6 +236,10 @@ header {
   font-weight: 700;
   line-height: 1.3125rem;
   padding: 15px 0;
+}
+
+.main--about--header--desktop {
+  display: none;
 }
 
 .main--program--header,
@@ -281,7 +271,7 @@ header {
   width: 1.875rem;
   height: 0.125rem;
   height: 3px;
-  background: #a04038;
+  background: var(--primary-orange);
   border-radius: 10px;
 }
 
@@ -334,8 +324,12 @@ header {
 
 .about--summit--info {
   padding: 1.25rem 0.75rem;
-  margin: 2.19rem 0;
+  margin: 4.95rem 0 2.5rem 0;
   background-color: #fff;
+}
+
+.summit--info--desktop--para {
+  display: none;
 }
 
 .about--summit--info p {
@@ -363,7 +357,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(139, 139, 139, 0.072);
   padding: 1.25rem 0.75rem;
 }
 
@@ -399,7 +392,7 @@ header {
 }
 
 .speaker--description h4 {
-  color: #000;
+  color: #272a31;
   font-size: 1.5rem;
   font-weight: 700;
 }
@@ -503,6 +496,11 @@ footer {
   width: 100%;
 }
 
+.about--image--container .about--image {
+  height: 11.40394rem;
+  width: 100%;
+}
+
 .about--image--container div:nth-child(1) {
   background: url(images/about_2011\ 1.png);
   background-repeat: no-repeat;
@@ -521,6 +519,14 @@ footer {
   filter: blur(5px);
 }
 
+.main--about--logo {
+  background-image: url(images/about_logo_mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 8.85719rem;
+}
+
 @media (min-width: 768px) {
   .header--nav--container {
     position: unset;
@@ -528,6 +534,59 @@ footer {
     width: auto;
     display: flex;
     background-color: #fff;
+  }
+
+  .header--nav--section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+    padding: 10px;
+    width: 100%;
+  }
+
+  .header--hero--section .hero-bcg-text {
+    background-image: url(images/home_theme_desktop.png);
+    width: 45.80269rem;
+    height: 17.79006rem;
+  }
+
+  .header--logo {
+    display: block;
+  }
+
+  .main--about--logo {
+    background-image: url(images/about_logo_desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12.20494rem;
+    width: 80%;
+    margin: auto;
+  }
+
+  .main--about--info,
+  .see-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 4.06rem auto;
+  }
+
+  .see-container {
+    width: 70%;
+  }
+
+  .main--about--header--mobile {
+    display: none;
+  }
+
+  .main--about--header--desktop {
+    display: block;
   }
 
   .blur {
@@ -542,7 +601,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     padding: 0;
   }
 
@@ -574,11 +633,23 @@ footer {
   }
 
   .header--hero--section {
-    padding: 12.88rem 7.25rem 12.44rem 7.56rem;
+    padding: 7.25rem 12.88rem;
   }
 
   .hero--greeting {
     font-size: 3rem;
+  }
+
+  .hero--date {
+    font-size: 2.65525rem;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .hero--venue {
+    font-size: 1.72588rem;
+    font-style: normal;
+    font-weight: 700;
   }
 
   .header--hero--section h1 {
@@ -586,16 +657,14 @@ footer {
   }
 
   .hero--description {
-    font-size: 1.59313rem;
+    font-size: 1rem;
     border: 8.497px solid #fff;
     background: #f8f8f8;
     display: flex;
     width: 47.26306rem;
-    height: 11.28475rem;
-    padding: 2.27031rem 1.85869rem 2.20194rem 1.85863rem;
+    padding: 2rem 1.85869rem 2rem 1.85863rem;
     justify-content: center;
     align-items: center;
-    margin: 0;
   }
 
   .main--program--cards--container {
@@ -676,13 +745,30 @@ footer {
 
   .about--summit--info {
     padding: 2.1875rem 4.0625rem;
-    width: 50%;
-    margin: 20px auto;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
+  }
+
+  .summit--info--mobile--para {
+    display: none;
+  }
+
+  .summit--info--desktop--para {
+    display: block;
+  }
+
+  .about--header--section {
+    background-image: url(images/about_theme.png);
   }
 
   .about--header--break {
     display: none;
+  }
+
+  .about--hero--section {
+    padding: 6.8125rem 0;
   }
 
   .about--logo--design {
@@ -697,9 +783,14 @@ footer {
   }
 
   .about--image--container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about--image--container .about--image {
+    width: 100%;
+    height: 14.75rem;
   }
 }

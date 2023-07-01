@@ -113,7 +113,6 @@ To run the project, execute the following command:
 
 We welcome contributions to enhance the Summit Website. If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue in this repository.
 
-Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
