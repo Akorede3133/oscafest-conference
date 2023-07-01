@@ -22,5 +22,5 @@ closeIcon.addEventListener('click', () => {
   hamburgerBtn.classList.remove('blur');
   main.classList.remove('blur');
   footer.classList.remove('blur');
-  headerHeroSection.classList.remove('blur')
+  headerHeroSection.classList.remove('blur');
 });

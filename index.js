@@ -99,5 +99,5 @@ closeIcon.addEventListener('click', () => {
   footer.classList.remove('blur');
   headerSocial.classList.remove('blur');
   hamburgerBtn.classList.remove('blur');
-  headerHeroSection.classList.remove('blur')
-})
+  headerHeroSection.classList.remove('blur');
+});

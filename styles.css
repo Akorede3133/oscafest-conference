@@ -50,19 +50,23 @@ header {
   justify-content: flex-end;
   padding: 4px;
 }
+
 .header--social ul {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
 .header--hamburger {
   cursor: pointer;
   transition: all 0.2s linear;
 }
+
 .header--hamburger:hover {
   transform: scale(1.2);
 }
- .bi,
+
+.bi,
 .header--social ul a {
   color: #fff;
 }
@@ -71,11 +75,13 @@ header {
   display: flex;
   gap: 0.4rem;
 }
+
 .main--about--logo {
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
+
 .logo--text {
   font-size: 19px;
 }
@@ -89,9 +95,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .about--logo--design {
   padding: 20px;
 }
+
 .about--logo--design p {
   font-size: 1.2rem;
 }
@@ -108,9 +116,11 @@ header {
   background-color: var(--primary-light-dark);
   transition: all 0.5s linear;
 }
+
 .show--header--nav--container {
   height: 100%;
 }
+
 .header--nav ul {
   padding: 50px 0;
   display: flex;
@@ -154,6 +164,7 @@ header {
 .header--hero--section {
   padding: 6rem 20px 4.44rem 20px;
 }
+
 .about--header--section {
   display: flex;
   flex-direction: column;
@@ -162,10 +173,12 @@ header {
   gap: 1rem;
   padding: 10px;
 }
+
 .hero--greeting {
   color: rgba(255, 79, 56, 1);
   font-size: 1.2rem;
 }
+
 .about--hero--greeting {
   color: rgba(255, 79, 56, 1);
   font-size: 2rem;
@@ -177,9 +190,11 @@ header {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
 .about--header--section h1 {
   font-size: 2rem;
 }
+
 .hero--description {
   color: #515151;
   font-size: 1rem;
@@ -211,6 +226,7 @@ header {
   background-size: cover;
   padding: 40px 20px;
 }
+
 .main--program--header--container,
 .featured--speaker--header--container,
 .main--about--header--container,
@@ -221,9 +237,11 @@ header {
   align-items: center;
   gap: 0.6rem;
 }
+
 .main--about--info {
   padding: 20px;
 }
+
 .main--about--header--text {
   color: #838383;
   text-align: center;
@@ -233,6 +251,7 @@ header {
   line-height: 1.3125rem;
   padding: 15px 0;
 }
+
 .main--program--header,
 .main--about--header {
   color: #fff;
@@ -240,6 +259,7 @@ header {
   line-height: 1.75rem;
   position: relative;
 }
+
 .main--about--header {
   color: #2c2c2c;
   text-align: center;
@@ -248,10 +268,12 @@ header {
   font-weight: 700;
   line-height: 1.75rem;
 }
+
 .featured--speaker--header {
   color: #000;
   font-size: 1.25rem;
 }
+
 .main--program--header--line,
 .featured--speaker--header--line,
 .main--about--header--line,
@@ -262,12 +284,14 @@ header {
   background: #a04038;
   border-radius: 10px;
 }
+
 .main--program--cards--container {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
+
 .main--program--card {
   display: flex;
   align-items: center;
@@ -276,26 +300,30 @@ header {
   background-color: rgba(59, 62, 69, 1);
   padding: 10px;
 }
+
 .cards--icon--text p {
   color: #ff5438;
   font-size: 0.89194rem;
   font-weight: 700;
   line-height: 1.56094rem;
 }
+
 .main--program--card-description {
   color: #fff;
   font-size: 0.66894rem;
   font-weight: 700;
   line-height: 1.39369rem;
 }
+
 .cards--icon--text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.55744rem;
 }
+
 .main--program--link {
-  background: #FF4F38;
+  background: #ff4f38;
   width: 80%;
   padding: 20px;
   display: block;
@@ -303,11 +331,13 @@ header {
   text-align: center;
   color: #fff;
 }
+
 .about--summit--info {
   padding: 1.25rem 0.75rem;
   margin: 2.19rem 0;
   background-color: #fff;
 }
+
 .about--summit--info p {
   color: #000;
   text-align: center;
@@ -316,8 +346,9 @@ header {
   font-weight: 400;
   line-height: 1.5625rem;
 }
+
 .about-contact--info--mail {
-  color: #5F5F5F;
+  color: #5f5f5f;
   text-align: center;
   font-size: 0.75rem;
   font-style: normal;
@@ -326,6 +357,7 @@ header {
   letter-spacing: 0.015rem;
   text-decoration-line: underline;
 }
+
 .about--contact--section {
   display: flex;
   flex-direction: column;
@@ -334,6 +366,7 @@ header {
   background-color: rgba(139, 139, 139, 0.072);
   padding: 1.25rem 0.75rem;
 }
+
 .about--contact--info {
   color: #7a7a7a;
   text-align: center;
@@ -342,44 +375,52 @@ header {
   font-weight: 700;
   line-height: 1.5625rem;
 }
+
 .featured--speaker {
   padding: 20px;
 }
+
 .featured--speakers--container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-top: 30px;
 }
+
 .featured--speakers-card {
   display: flex;
   gap: 2rem;
 }
+
 .speakers--img img {
   width: 150px;
   height: 170px;
   object-fit: cover;
 }
+
 .speaker--description h4 {
   color: #000;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .speaker--description h5 {
-  color: #F78C89;
+  color: #f78c89;
   font-size: 0.9375rem;
   font-weight: 700;
 }
+
 .speaker--description p {
   color: #000;
   font-size: 0.875rem;
   font-weight: 700;
 }
+
 .see--more-btn {
   display: flex;
   width: 100%;
   margin-top: 20px;
-  padding: 0.75rem 0rem 0.8125rem 0rem;
+  padding: 0.75rem 0 0.8125rem 0;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -388,20 +429,24 @@ header {
   cursor: pointer;
   transition: all 0.5s linear;
 }
+
 .see--more-btn:hover {
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
   transform: scale(0.9);
 }
+
 .see--more-btn p {
   color: #000;
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .partners--section {
   padding: 25px 10px 40px 10px;
   background-color: rgba(65, 66, 70, 1);
 }
+
 .partners--logos--container {
   display: flex;
   gap: 2rem;
@@ -410,6 +455,7 @@ header {
   justify-content: center;
   margin-top: 20px;
 }
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -418,10 +464,12 @@ footer {
   background-color: #fff;
   padding: 20px;
 }
+
 .footer--logo {
   display: flex;
   gap: 0.5rem;
 }
+
 .footer--design {
   height: 40px;
   width: 40px;
@@ -431,6 +479,7 @@ footer {
   justify-content: center;
   border: 3px dashed #000;
 }
+
 .about--see--para {
   color: #838383;
   text-align: center;
@@ -439,6 +488,7 @@ footer {
   font-weight: 700;
   line-height: 1.3125rem;
 }
+
 .about--image--container {
   display: flex;
   flex-direction: column;
@@ -452,21 +502,25 @@ footer {
   height: 200px;
   width: 100%;
 }
+
 .about--image--container div:nth-child(1) {
   background: url(images/about_2011\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .about--image--container div:nth-child(2) {
   background: url(images/about_2013\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 .blur {
   filter: blur(5px);
 }
+
 @media (min-width: 768px) {
   .header--nav--container {
     position: unset;
@@ -475,9 +529,11 @@ footer {
     display: flex;
     background-color: #fff;
   }
+
   .blur {
     filter: unset;
   }
+
   .nav--close--icon {
     display: none;
   }
@@ -493,21 +549,24 @@ footer {
   .header--nav ul li {
     padding: 0;
   }
+
   .header--nav ul li:hover {
     background-color: unset;
-  }
-  .header--nav ul li:hover a {
-    color: var(--primary-orange);
-  }
-  .header--nav ul li:last-child {
-    border: 4px solid var(--primary-orange);
-    padding: 10px;
-    margin-left: 20px;
   }
 
   .header--nav ul a {
     color: var(--primary-black);
     font-size: 15px;
+  }
+
+  .header--nav ul li:hover a {
+    color: var(--primary-orange);
+  }
+
+  .header--nav ul li:last-child {
+    border: 4px solid var(--primary-orange);
+    padding: 10px;
+    margin-left: 20px;
   }
 
   .header--hamburger {
@@ -525,6 +584,7 @@ footer {
   .header--hero--section h1 {
     font-size: 4rem;
   }
+
   .hero--description {
     font-size: 1.59313rem;
     border: 8.497px solid #fff;
@@ -537,6 +597,7 @@ footer {
     align-items: center;
     margin: 0;
   }
+
   .main--program--cards--container {
     flex-direction: row;
     gap: 0.2rem;
@@ -544,6 +605,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
+
   .main--program--card {
     display: flex;
     flex-direction: column;
@@ -552,13 +614,16 @@ footer {
     transition: all 0.4s linear;
     cursor: pointer;
   }
+
   .main--program--card:hover {
     border: 2px solid #fff;
     transform: scale(0.9);
   }
+
   .main--program--card-description {
     text-align: center;
   }
+
   .cards--icon--text {
     display: flex;
     flex-direction: column;
@@ -566,9 +631,14 @@ footer {
     justify-content: space-between;
     gap: 0.55744rem;
   }
+
   .main--program--link {
     width: 300px;
+    background: inherit;
+    text-decoration: underline;
+    color: #fff;
   }
+
   .featured--speakers--container {
     width: 80%;
     margin-left: auto;
@@ -577,12 +647,15 @@ footer {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
   .featured--speakers-card {
     align-items: center;
   }
+
   .see--more-btn {
     display: none;
   }
+
   .partners--logos--container {
     display: flex;
     gap: 2rem;
@@ -591,31 +664,38 @@ footer {
     justify-content: space-between;
     margin-top: 20px;
   }
+
   .partners--logos--container img {
     width: 150px;
     object-fit: cover;
   }
+
   footer {
     padding: 20px 100px;
   }
+
   .about--summit--info {
     padding: 2.1875rem 4.0625rem;
     width: 50%;
     margin: 20px auto;
     background-color: #fff;
   }
+
   .about--header--break {
     display: none;
   }
+
   .about--logo--design {
     padding: 20px;
     height: 50px;
     width: 50px;
     gap: 1rem;
-  } 
+  }
+
   .about--logo--design p {
     font-size: 1.4rem;
   }
+
   .about--image--container {
     width: 80%;
     margin: auto;
