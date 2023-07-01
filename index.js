@@ -86,7 +86,6 @@ window.addEventListener('DOMContentLoaded', () => {
 hamburgerBtn.addEventListener('click', () => {
   navContainer.classList.add('show--header--nav--container');
   headerLogo.classList.add('blur');
-  headerSocial.classList.add('blur');
   hamburgerBtn.classList.add('blur');
   main.classList.add('blur');
   footer.classList.add('blur');
@@ -97,7 +96,6 @@ closeIcon.addEventListener('click', () => {
   headerLogo.classList.remove('blur');
   main.classList.remove('blur');
   footer.classList.remove('blur');
-  headerSocial.classList.remove('blur');
   hamburgerBtn.classList.remove('blur');
   headerHeroSection.classList.remove('blur');
 });
